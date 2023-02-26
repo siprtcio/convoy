@@ -577,9 +577,9 @@ type EventDelivery struct {
 	DeviceID       string                `json:"device_id" bson:"device_id"`
 	SubscriptionID string                `json:"subscription_id,omitempty" bson:"subscription_id"`
 	Headers        httpheader.HTTPHeader `json:"headers" bson:"headers"`
-
-	Endpoint *Endpoint `json:"endpoint_metadata,omitempty" bson:"endpoint_metadata"`
-	Event    *Event    `json:"event_metadata,omitempty" bson:"event_metadata"`
+	QueryParams    map[string][]string   `json:"query_params" bson:"query_params"`
+	Endpoint       *Endpoint             `json:"endpoint_metadata,omitempty" bson:"endpoint_metadata"`
+	Event          *Event                `json:"event_metadata,omitempty" bson:"event_metadata"`
 
 	DeliveryAttempts []DeliveryAttempt   `json:"-" bson:"attempts"`
 	Status           EventDeliveryStatus `json:"status" bson:"status"`
