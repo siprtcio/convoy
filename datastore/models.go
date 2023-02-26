@@ -436,6 +436,7 @@ type Event struct {
 	ProjectID        string                `json:"project_id,omitempty" bson:"project_id"`
 	Endpoints        []string              `json:"endpoints" bson:"endpoints"`
 	Headers          httpheader.HTTPHeader `json:"headers" bson:"headers"`
+	QueryParams      map[string][]string   `json:"query_params" bson:"query_params"`
 	EndpointMetadata []*Endpoint           `json:"endpoint_metadata,omitempty" bson:"endpoint_metadata"`
 	Source           *Source               `json:"source_metadata,omitempty" bson:"source_metadata"`
 
