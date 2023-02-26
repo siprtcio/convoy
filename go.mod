@@ -26,8 +26,8 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/googleapis/gax-go/v2 v2.7.0 // indirect
 	github.com/gorilla/websocket v1.5.0
-	github.com/hibiken/asynq v0.23.0
-	github.com/hibiken/asynq/x v0.0.0-20221219051101-0b8cfad70341
+	github.com/hibiken/asynq v0.24.0
+	github.com/hibiken/asynq/x v0.0.0-20230106040302-cc777ebdaa62
 	github.com/hibiken/asynqmon v0.7.1
 	github.com/jarcoal/httpmock v1.0.8
 	github.com/jaswdr/faker v1.10.2
